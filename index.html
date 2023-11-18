@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano Alimentar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@400;700&family=Merriweather:wght@300;700&display=swap');
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
+
+
+        body {
+            background-color: #D9D9D9;
+            padding: 0;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            color: #101828;
+        }
+
+        .main {
+            background-color: #EFEFEF;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            padding: 36px 36px 0 36px;
+            margin-bottom: 72px;
+        }
+
+        header>h1 {
+            font-size: 38px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 38px;
+            margin-bottom: 24px;
+        }
+
+        header>.nutri {
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 24px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header>.nutri>span {
+            font-size: 12px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        header>.box-with-shadow {
+            background-color: #FFFFFF;
+            box-shadow: 0px 8px 11.3px 0px rgba(0, 0, 0, 0.14);
+            border-radius: 8px;
+            padding: 16px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        header>.box-with-shadow>h2 {
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 4px;
+        }
+
+        header>.box-with-shadow>span {
+            font-size: 14px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .meal {
+            width: calc(100vw - 38px);
+            min-width: calc(100vw - 38px);
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 64px;
+            padding: 18px 0 18px 36px;
+        }
+
+        .meal>.header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 16px;
+            padding-right: 36px;
+        }
+
+        .meal>.header>.time {
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 4px;
+        }
+
+        .meal>.header>.name {
+            font-size: 30px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .meal>.body {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            width: 100%;
+        }
+
+        .food-card {
+            display: flex;
+            width: 100%;
+            overflow: auto;
+        }
+
+        .food-card>.item {
+            width: calc(100vw - 74px);
+            min-width: calc(100vw - 74px);
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            border: 1px solid #D6BBFB;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .food-card>.item>.header {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+
+        .food-card>.item>.header>.text {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .food-card>.item>.header>.weight {
+            font-size: 36px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+
+        .food-card>.item>.header>.weight>span {
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 4px;
+        }
+
+        .food-card>.item>.body {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 16px;
+            box-sizing: border-box;
+            border-top: 1px solid #D6BBFB;
+        }
+
+        .food-card>.item>.body>ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .food-card>.item>.body>ul>li {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 8px;
+            color: #667085;
+        }
+
+        .food-card>.or {
+            font-size: 18px;
+            font-weight: 400;
+            color: #667085;
+            padding: 0px 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            padding: 16px;
+            font-size: 14px;
+            text-align: center;
+            background-color: #D9D9D9;
+        }
+
+        footer>a {
+            color: #101828;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <header>
+            <h1>Plano <br />Alimentar</h1>
+            <div class="nutri">
+                Lucas de Oliveira Silva
+                <span>CRN: 16555</span>
+            </div>
+            <section class="box-with-shadow">
+                <h2>André Luiz Batista</h2>
+                <span>16/11/2023</span>
+            </section>
+        </header>
+
+        <section class="meal">
+            <div class="header">
+                <div class="time">
+                    06:30
+                </div>
+                <div class="name">Pré-Treino</div>
+            </div>
+            <div class="body">
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Whey com Leite Desnatado
+                            </div>
+                        </div>
+                        <div class="body">
+                            <ul>
+                                <li>20g - Whey Protein</li>
+                                <li>150g - Leite Desnatado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="meal">
+            <div class="header">
+                <div class="time">
+                    09:30
+                </div>
+                <div class="name">Pós-Treino</div>
+            </div>
+            <div class="body">
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Café com Leite Integral
+                            </div>
+                        </div>
+                        <div class="body">
+                            <ul>
+                                <li>100g - Leite Integral</li>
+                                <li>5g - Açúcar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Pão de Forma Integral
+                            </div>
+                            <div class="weight">
+                                2<span>fatias</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Aipim
+                            </div>
+                            <div class="weight">
+                                110<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Batata Doce Cozida
+                            </div>
+                            <div class="weight">
+                                181<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Inhame Cozido
+                            </div>
+                            <div class="weight">
+                                119<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Banana da Terra Cozida
+                            </div>
+                            <div class="weight">
+                                156<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Cuscuz
+                            </div>
+                            <div class="weight">
+                                122<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Tapioca
+                            </div>
+                            <div class="weight">
+                                41<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Ovos Mexidos
+                            </div>
+                            <div class="weight">
+                                2
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Queijo Mussarela
+                            </div>
+                            <div class="weight">
+                                25<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Whey com Leite Desnatado
+                            </div>
+                        </div>
+                        <div class="body">
+                            <ul>
+                                <li>20g - Whey Protein</li>
+                                <li>150g - Leite Desnatado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="meal">
+            <div class="header">
+                <div class="time">
+                    13:00
+                </div>
+                <div class="name">Almoço</div>
+            </div>
+            <div class="body">
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Arroz com Feijão
+                            </div>
+                        </div>
+                        <div class="body">
+                            <ul>
+                                <li>80g - Arroz</li>
+                                <li>40g - Feijão</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Arroz com Purê de Batata
+                            </div>
+                        </div>
+                        <div class="body">
+                            <ul>
+                                <li>37g - Arroz</li>
+                                <li>75g - Purê de Batata</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Arroz com Batata Inglesa
+                            </div>
+                        </div>
+                        <div class="body">
+                            <ul>
+                                <li>50g - Arroz</li>
+                                <li>125g - Purê de Batata Doce</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Aipim Cozido
+                            </div>
+                            <div class="weight">
+                                103<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Macarrão
+                            </div>
+                            <div class="weight">
+                                82<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Frango Grelhado /Assado/Cozido
+                            </div>
+                            <div class="weight">
+                                80<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Carne Grelhada
+                            </div>
+                            <div class="weight">
+                                80<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Peixe Grelhado
+                            </div>
+                            <div class="weight">
+                                80<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Ovo Cozido
+                            </div>
+                            <div class="weight">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Salada e Verdura Livre
+                            </div>
+                            <div class="weight">
+                                150<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="meal">
+            <div class="header">
+                <div class="time">
+                    16:00
+                </div>
+                <div class="name">Lanche da Tarde</div>
+            </div>
+            <div class="body">
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Iogurte Natural Desnatado
+                            </div>
+                            <div class="weight">
+                                170<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Banana
+                            </div>
+                            <div class="weight">
+                                75<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Maçã
+                            </div>
+                            <div class="weight">
+                                125<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Melão
+                            </div>
+                            <div class="weight">
+                                250<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Mamão
+                            </div>
+                            <div class="weight">
+                                160<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Melancia
+                            </div>
+                            <div class="weight">
+                                223<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Pêra
+                            </div>
+                            <div class="weight">
+                                123<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Laranja
+                            </div>
+                            <div class="weight">
+                                155<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Uva
+                            </div>
+                            <div class="weight">
+                                130<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Tangerina
+                            </div>
+                            <div class="weight">
+                                192<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Goiaba
+                            </div>
+                            <div class="weight">
+                                142<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Manga
+                            </div>
+                            <div class="weight">
+                                112<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Pinha
+                            </div>
+                            <div class="weight">
+                                82<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Kiwi
+                            </div>
+                            <div class="weight">
+                                135<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Pitaia
+                            </div>
+                            <div class="weight">
+                                132<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Morango
+                            </div>
+                            <div class="weight">
+                                241<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Amora
+                            </div>
+                            <div class="weight">
+                                160<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Mirtilo
+                            </div>
+                            <div class="weight">
+                                120<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Ameixa
+                            </div>
+                            <div class="weight">
+                                133<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Morango
+                            </div>
+                            <div class="weight">
+                                100<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">Kiwi</div>
+                            <div class="weight">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">Melão</div>
+                            <div class="weight">
+                                100<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">Mamão</div>
+                            <div class="weight">
+                                70<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">Uva</div>
+                            <div class="weight">
+                                54<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">Abacaxi</div>
+                            <div class="weight">
+                                60<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">Melancia</div>
+                            <div class="weight">
+                                94<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">Pêra</div>
+                            <div class="weight">
+                                52<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">Goiaba</div>
+                            <div class="weight">
+                                60<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">Manga</div>
+                            <div class="weight">
+                                47<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">Pinha</div>
+                            <div class="weight">
+                                335<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">Maçã</div>
+                            <div class="weight">
+                                55<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">Tangerina</div>
+                            <div class="weight">
+                                81<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">Banana</div>
+                            <div class="weight">
+                                31<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Uva
+                            </div>
+                            <div class="weight">
+                                50<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Melão
+                            </div>
+                            <div class="weight">
+                                95<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Mamão
+                            </div>
+                            <div class="weight">
+                                60<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Morango
+                            </div>
+                            <div class="weight">
+                                92<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Melancia
+                            </div>
+                            <div class="weight">
+                                85<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Laranja
+                            </div>
+                            <div class="weight">
+                                60<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Goiaba
+                            </div>
+                            <div class="weight">
+                                55<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Abacaxi
+                            </div>
+                            <div class="weight">
+                                58<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Manga
+                            </div>
+                            <div class="weight">
+                                43<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Maçã
+                            </div>
+                            <div class="weight">
+                                50<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Pitaia
+                            </div>
+                            <div class="weight">
+                                51<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Manga
+                            </div>
+                            <div class="weight">
+                                100g<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Melão
+                            </div>
+                            <div class="weight">
+                                220<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Mamão
+                            </div>
+                            <div class="weight">
+                                143<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Kiwi
+                            </div>
+                            <div class="weight">
+                                127<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Morango
+                            </div>
+                            <div class="weight">
+                                215<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Melancia
+                            </div>
+                            <div class="weight">
+                                199<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Laranja
+                            </div>
+                            <div class="weight">
+                                138<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Abacaxi
+                            </div>
+                            <div class="weight">
+                                134<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Pinha
+                            </div>
+                            <div class="weight">
+                                73<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Abacate
+                            </div>
+                            <div class="weight">
+                                67<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Banana
+                            </div>
+                            <div class="weight">
+                                66<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Uva
+                            </div>
+                            <div class="weight">
+                                116<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Goiaba
+                            </div>
+                            <div class="weight">
+                                127<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Maçã
+                            </div>
+                            <div class="weight">
+                                117<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="meal">
+            <div class="header">
+                <div class="time">
+                    19:30
+                </div>
+                <div class="name">Jantar</div>
+            </div>
+            <div class="body">
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Aipim
+                            </div>
+                            <div class="weight">
+                                160<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Pão
+                            </div>
+                            <div class="weight">
+                                72<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Batata Doce Cozida
+                            </div>
+                            <div class="weight">
+                                261<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Inhame
+                            </div>
+                            <div class="weight">
+                                172<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Banana da Terra Cozida
+                            </div>
+                            <div class="weight">
+                                225<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Cuscuz
+                            </div>
+                            <div class="weight">
+                                176<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Tapioca
+                            </div>
+                            <div class="weight">
+                                60<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Arroz
+                            </div>
+                            <div class="weight">
+                                160<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Macarrão
+                            </div>
+                            <div class="weight">
+                                127<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Filé de Frango Grelhado /Assado/Cozido
+                            </div>
+                            <div class="weight">
+                                120<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Carne Grelhada
+                            </div>
+                            <div class="weight">
+                                120<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Peixe Grelhado
+                            </div>
+                            <div class="weight">
+                                120<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Ovos Mexidos
+                            </div>
+                            <div class="weight">
+                                3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Queijo Mussarela
+                            </div>
+                            <div class="weight">
+                                25<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Banana
+                            </div>
+                            <div class="weight">
+                                75<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Maçã
+                            </div>
+                            <div class="weight">
+                                125<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Melão
+                            </div>
+                            <div class="weight">
+                                250<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Mamão
+                            </div>
+                            <div class="weight">
+                                160<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Melancia
+                            </div>
+                            <div class="weight">
+                                223<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Pêra
+                            </div>
+                            <div class="weight">
+                                123<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Laranja
+                            </div>
+                            <div class="weight">
+                                155<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Uva
+                            </div>
+                            <div class="weight">
+                                130<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Tangerina
+                            </div>
+                            <div class="weight">
+                                192<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Goiaba
+                            </div>
+                            <div class="weight">
+                                142<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Manga
+                            </div>
+                            <div class="weight">
+                                112<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Pinha
+                            </div>
+                            <div class="weight">
+                                82<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Kiwi
+                            </div>
+                            <div class="weight">
+                                135<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Pitaia
+                            </div>
+                            <div class="weight">
+                                132<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Morango
+                            </div>
+                            <div class="weight">
+                                241<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Amora
+                            </div>
+                            <div class="weight">
+                                160<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Mirtilo
+                            </div>
+                            <div class="weight">
+                                120<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="or">ou</div>
+                    <div class="item">
+                        <div class="header">
+                            <div class="text">
+                                Ameixa
+                            </div>
+                            <div class="weight">
+                                133<span>g</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            Feito por <a href="https://www.linkedin.com/in/andreluizbatista/" target="_blank">André Luiz Batista</a>
+        </footer>
+    </section>
+</body>
+
+</html>
