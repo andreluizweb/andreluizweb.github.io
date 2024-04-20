@@ -1,38 +1,222 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@400;700&family=Merriweather:wght@300;700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+        body {
+            background-color: #D9D9D9;
+            padding: 0;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            color: #101828;
+        }
 
-.App-link {
-  color: #61dafb;
-}
+        .main {
+            background-color: #EFEFEF;
+            display: flex;
+            flex-direction: column;
+        }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            padding: 36px 36px 0 36px;
+            margin-bottom: 72px;
+        }
+
+        header>h1 {
+            font-size: 38px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 38px;
+            margin-bottom: 24px;
+        }
+
+        header>.nutri {
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 24px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header>.nutri>span {
+            font-size: 12px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        header>.box-with-shadow {
+            background-color: #FFFFFF;
+            box-shadow: 0px 8px 11.3px 0px rgba(0, 0, 0, 0.14);
+            border-radius: 8px;
+            padding: 16px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        header>.box-with-shadow>h2 {
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 4px;
+        }
+
+        header>.box-with-shadow>span {
+            font-size: 14px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .meal {
+            width: calc(100vw - 38px);
+            min-width: calc(100vw - 38px);
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 64px;
+            padding: 18px 0 18px 36px;
+        }
+
+        .meal>.header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 16px;
+            padding-right: 36px;
+        }
+
+        .meal>.header>.time {
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 4px;
+        }
+
+        .meal>.header>.name {
+            font-size: 30px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .meal>.body {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            width: 100%;
+        }
+
+        .food-card {
+            display: flex;
+            width: 100%;
+            overflow: auto;
+        }
+
+        .food-card>.item {
+            width: calc(100vw - 74px);
+            min-width: calc(100vw - 74px);
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            border: 1px solid #D6BBFB;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .food-card>.item>.header {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            box-sizing: border-box;
+        }
+
+        .food-card>.item>.header>.text {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .uppertext {
+            font-size: 10px;
+            display: block;
+            background: aliceblue;
+            padding: 6px 12px;
+            border-radius: 18px;
+            color: #56636f;
+            margin-bottom: 8px;
+        }
+
+        .food-card>.item>.header>.weight {
+            font-size: 36px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+
+        .food-card>.item>.header>.weight>span {
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 4px;
+        }
+
+        .food-card>.item>.body {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 16px;
+            box-sizing: border-box;
+            border-top: 1px solid #D6BBFB;
+        }
+
+        .food-card>.item>.body>ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .food-card>.item>.body>ul>li {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 8px;
+            color: #667085;
+        }
+
+        .food-card>.or {
+            font-size: 18px;
+            font-weight: 400;
+            color: #667085;
+            padding: 0px 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            padding: 16px;
+            font-size: 14px;
+            text-align: center;
+            background-color: #D9D9D9;
+        }
+
+        footer>a {
+            color: #101828;
+            font-weight: 700;
+        }
