@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dieta/static/css/main.9c2aa538.css",
-    "main.js": "/dieta/static/js/main.cfb63b7e.js",
+    "main.js": "/dieta/static/js/main.dcc9a3ac.js",
     "static/js/453.f599ae1a.chunk.js": "/dieta/static/js/453.f599ae1a.chunk.js",
     "index.html": "/dieta/index.html",
     "main.9c2aa538.css.map": "/dieta/static/css/main.9c2aa538.css.map",
-    "main.cfb63b7e.js.map": "/dieta/static/js/main.cfb63b7e.js.map",
+    "main.dcc9a3ac.js.map": "/dieta/static/js/main.dcc9a3ac.js.map",
     "453.f599ae1a.chunk.js.map": "/dieta/static/js/453.f599ae1a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9c2aa538.css",
-    "static/js/main.cfb63b7e.js"
+    "static/js/main.dcc9a3ac.js"
   ]
 }
