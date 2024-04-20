@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <div>ROOT</div>,

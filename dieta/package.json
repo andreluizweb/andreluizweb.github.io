@@ -1,7 +1,7 @@
 {
   "name": "dieta",
   "version": "0.1.0",
-  "homepage": "https://andreluizweb.github.io/dieta",
+  "homepage": "https://andreluizdev.vercel.app/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
