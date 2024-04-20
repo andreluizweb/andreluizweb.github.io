@@ -2,5 +2,1025 @@
   "professional": "Lucas de Oliveira Silva",
   "crn": "16555",
   "name": "Érika Ramos de Lima Aureliano",
-  "date": "11/04/2024"
+  "date": "11/04/2024",
+  "meals": [
+    {
+      "time": "06:30",
+      "name": "Café da manhã",
+      "foods": [
+        {
+          "options": [
+            {
+              "name": "Café com adoçante"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Pão",
+              "weight": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Cuscuz",
+              "weight": 122,
+              "unit": "g"
+            },
+            {
+              "name": "Tapioca",
+              "weight": 41,
+              "unit": "g"
+            },
+            {
+              "name": "Inhame cozido",
+              "weight": 119,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Ovo",
+              "weight": 1
+            },
+            {
+              "name": "Filé de Frango Desfiado",
+              "weight": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Carne Moída (patinho/filé mignon/alcatra magra)",
+              "weight": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Atum",
+              "weight": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Sardinha",
+              "weight": 40,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "uppertag": "Substituir tudo por",
+              "name": "Vitamina",
+              "list": [
+                "200ml - Leite Desnatado",
+                "75g - Banana",
+                "15g - Aveia",
+                "10g - Whey"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "time": "09:40",
+      "name": "Lanche da manhã",
+      "foods": [
+        {
+          "options": [
+            {
+              "name": "Batata doce",
+              "weight": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Banana da Terra",
+              "weight": 90,
+              "unit": "g"
+            },
+            {
+              "name": "Abóbora",
+              "weight": 160,
+              "unit": "g"
+            },
+            {
+              "name": "Inhame",
+              "weight": 66,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Filé de Frango Desfiado",
+              "weight": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Carne Moída (patinho/filé mignon/alcatra magra)",
+              "weight": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Atum",
+              "weight": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Sardinha",
+              "weight": 80,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "uppertag": "Substituir tudo por",
+              "name": "Barra Bold",
+              "weight": 1,
+              "unit": "Seg e Ter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Almoço",
+      "time": "13:00",
+      "foods": [
+        {
+          "options": [
+            {
+              "name": "Arroz",
+              "weight": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Macarrão",
+              "weight": 66,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Feijão carioca",
+              "weight": 80,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Filé de Frango grelhado",
+              "weight": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Carne grelhada",
+              "weight": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Peixe grelhado",
+              "weight": 100,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Salada",
+              "weight": 150,
+              "unit": "g"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pré-treino",
+      "time": "16:30",
+      "foods": [
+        {
+          "options": [
+            {
+              "name": "Banana",
+              "weight": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Pão",
+              "weight": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Aipim",
+              "weight": 110,
+              "unit": "g"
+            },
+            {
+              "name": "Banana da Terra",
+              "weight": 156,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Mel",
+              "weight": 20,
+              "unit": "g"
+            },
+            {
+              "name": "Doce de leite",
+              "weight": 20,
+              "unit": "g"
+            },
+            {
+              "name": "Leite Condensado",
+              "weight": 20,
+              "unit": "g"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pós-treino",
+      "time": "19:00",
+      "foods": [
+        {
+          "options": [
+            {
+              "name": "Cuscuz",
+              "weight": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Aipim",
+              "weight": 90,
+              "unit": "g"
+            },
+            {
+              "name": "Batata doce",
+              "weight": 148,
+              "unit": "g"
+            },
+            {
+              "name": "Inhame",
+              "weight": 97,
+              "unit": "g"
+            },
+            {
+              "name": "Banana da Terra",
+              "weight": 127,
+              "unit": "g"
+            },
+            {
+              "name": "Arroz",
+              "weight": 90,
+              "unit": "g"
+            },
+            {
+              "name": "Pão",
+              "weight": 40,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Ovos",
+              "weight": 3
+            },
+            {
+              "name": "Filé de Frango Grelhado",
+              "weight": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Carne Grelhada",
+              "weight": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Peixe Grelhado",
+              "weight": 120,
+              "unit": "g"
+            },
+            {
+              "name": "1 Ovo + 80g de Frango/Carne/Peixe Grelhado"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Manteiga",
+              "weight": 3,
+              "unit": "g"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Jantar",
+      "time": "22:00",
+      "foods": [
+        {
+          "options": [
+            {
+              "name": "Iogurte Desnatado",
+              "weight": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Leite Desnatado em Pó",
+              "weight": 11,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Banana",
+              "weight": 75,
+              "unit": "g"
+            },
+            {
+              "name": "Maçã",
+              "weight": 125,
+              "unit": "g"
+            },
+            {
+              "name": "Melão",
+              "weight": 250,
+              "unit": "g"
+            },
+            {
+              "name": "Mamão",
+              "weight": 160,
+              "unit": "g"
+            },
+            {
+              "name": "Melancia",
+              "weight": 223,
+              "unit": "g"
+            },
+            {
+              "name": "Pêra",
+              "weight": 123,
+              "unit": "g"
+            },
+            {
+              "name": "Laranja",
+              "weight": 155,
+              "unit": "g"
+            },
+            {
+              "name": "Uva",
+              "weight": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Tangerina",
+              "weight": 192,
+              "unit": "g"
+            },
+            {
+              "name": "Goiaba",
+              "weight": 142,
+              "unit": "g"
+            },
+            {
+              "name": "Manga",
+              "weight": 112,
+              "unit": "g"
+            },
+            {
+              "name": "Pinha",
+              "weight": 82,
+              "unit": "g"
+            },
+            {
+              "name": "Kiwi",
+              "weight": 135,
+              "unit": "g"
+            },
+            {
+              "name": "Pitaia",
+              "weight": 132,
+              "unit": "g"
+            },
+            {
+              "name": "Morango",
+              "weight": 241,
+              "unit": "g"
+            },
+            {
+              "name": "Amora",
+              "weight": 160,
+              "unit": "g"
+            },
+            {
+              "name": "Mirtilo",
+              "weight": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Abacaxi",
+              "weight": 142,
+              "unit": "g"
+            },
+            {
+              "name": "Jaca",
+              "weight": 80,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Chia",
+              "weight": 5,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Aveia em flocos finos",
+              "weight": 15,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Whey Protein",
+              "weight": 15,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "uppertag": "Substituir tudo por",
+              "name": "Refeição",
+              "list": [
+                "50g - Pão",
+                "40g - Frango/Carne/Peixe",
+                "25g - Creme de Ricota"
+              ]
+            },
+            {
+              "uppertag": "Substituir tudo por",
+              "name": "Refeição",
+              "list": [
+                "122g - Cuscuz",
+                "40g - Frango/Carne/Peixe",
+                "25g - Creme de Ricota"
+              ]
+            },
+            {
+              "uppertag": "Substituir tudo por",
+              "name": "Refeição",
+              "list": [
+                "41g - Tapioca",
+                "40g - Frango/Carne/Peixe",
+                "25g - Creme de Ricota"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "separator"
+    },
+    {
+      "name": "TER e QUI"
+    },
+    {
+      "name": "Café da manhã",
+      "time": "06:30",
+      "foods": [
+        {
+          "options": [
+            {
+              "name": "Café com adoçante"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Pão",
+              "weight": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Cuscuz",
+              "weight": 122,
+              "unit": "g"
+            },
+            {
+              "name": "Tapioca",
+              "weight": 41,
+              "unit": "g"
+            },
+            {
+              "name": "Inhame cozido",
+              "weight": 119,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Ovo",
+              "weight": 1
+            },
+            {
+              "name": "Filé de Frango Desfiado",
+              "weight": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Carne Moída (patinho/filé mignon/alcatra magra)",
+              "weight": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Atum",
+              "weight": 40,
+              "unit": "g"
+            },
+            {
+              "name": "Sardinha",
+              "weight": 40,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "uppertag": "Substituir tudo por",
+              "name": "Vitamina",
+              "list": [
+                "200ml - Leite Desnatado",
+                "75g - Banana",
+                "15g - Aveia",
+                "10g - Whey"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "time": "09:40",
+      "name": "Lanche da manhã",
+      "foods": [
+        {
+          "options": [
+            {
+              "name": "Batata doce",
+              "weight": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Banana da Terra",
+              "weight": 90,
+              "unit": "g"
+            },
+            {
+              "name": "Abóbora",
+              "weight": 160,
+              "unit": "g"
+            },
+            {
+              "name": "Inhame",
+              "weight": 66,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Filé de Frango Desfiado",
+              "weight": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Carne Moída (patinho/filé mignon/alcatra magra)",
+              "weight": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Atum",
+              "weight": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Sardinha",
+              "weight": 80,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "uppertag": "Substituir tudo por",
+              "name": "Barra Bold",
+              "weight": 1,
+              "unit": "Seg e Ter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Almoço",
+      "time": "13:00",
+      "foods": [
+        {
+          "options": [
+            {
+              "name": "Arroz",
+              "weight": 80,
+              "unit": "g"
+            },
+            {
+              "name": "Macarrão",
+              "weight": 66,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Feijão carioca",
+              "weight": 80,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Filé de Frango grelhado",
+              "weight": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Carne grelhada",
+              "weight": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Peixe grelhado",
+              "weight": 100,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Salada",
+              "weight": 150,
+              "unit": "g"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lanche da Tarde",
+      "time": "16:00",
+      "foods": [
+        {
+          "options": [
+            {
+              "name": "Iogurte Desnatado",
+              "weight": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Leite Desnatado em Pó",
+              "weight": 11,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Banana",
+              "weight": 75,
+              "unit": "g"
+            },
+            {
+              "name": "Maçã",
+              "weight": 125,
+              "unit": "g"
+            },
+            {
+              "name": "Melão",
+              "weight": 250,
+              "unit": "g"
+            },
+            {
+              "name": "Mamão",
+              "weight": 160,
+              "unit": "g"
+            },
+            {
+              "name": "Melancia",
+              "weight": 223,
+              "unit": "g"
+            },
+            {
+              "name": "Pêra",
+              "weight": 123,
+              "unit": "g"
+            },
+            {
+              "name": "Laranja",
+              "weight": 155,
+              "unit": "g"
+            },
+            {
+              "name": "Uva",
+              "weight": 130,
+              "unit": "g"
+            },
+            {
+              "name": "Tangerina",
+              "weight": 192,
+              "unit": "g"
+            },
+            {
+              "name": "Goiaba",
+              "weight": 142,
+              "unit": "g"
+            },
+            {
+              "name": "Manga",
+              "weight": 112,
+              "unit": "g"
+            },
+            {
+              "name": "Pinha",
+              "weight": 82,
+              "unit": "g"
+            },
+            {
+              "name": "Kiwi",
+              "weight": 135,
+              "unit": "g"
+            },
+            {
+              "name": "Pitaia",
+              "weight": 132,
+              "unit": "g"
+            },
+            {
+              "name": "Morango",
+              "weight": 241,
+              "unit": "g"
+            },
+            {
+              "name": "Amora",
+              "weight": 160,
+              "unit": "g"
+            },
+            {
+              "name": "Mirtilo",
+              "weight": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Abacaxi",
+              "weight": 142,
+              "unit": "g"
+            },
+            {
+              "name": "Jaca",
+              "weight": 80,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Chia",
+              "weight": 5,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Aveia em flocos finos",
+              "weight": 15,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Whey Protein",
+              "weight": 15,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "uppertag": "Substituir tudo por",
+              "name": "Refeição",
+              "list": [
+                "50g - Pão",
+                "40g - Frango/Carne/Peixe",
+                "25g - Creme de Ricota"
+              ]
+            },
+            {
+              "uppertag": "Substituir tudo por",
+              "name": "Refeição",
+              "list": [
+                "122g - Cuscuz",
+                "40g - Frango/Carne/Peixe",
+                "25g - Creme de Ricota"
+              ]
+            },
+            {
+              "uppertag": "Substituir tudo por",
+              "name": "Refeição",
+              "list": [
+                "41g - Tapioca",
+                "40g - Frango/Carne/Peixe",
+                "25g - Creme de Ricota"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pré-treino",
+      "time": "19:00",
+      "foods": [
+        {
+          "options": [
+            {
+              "name": "Banana",
+              "weight": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Pão",
+              "weight": 50,
+              "unit": "g"
+            },
+            {
+              "name": "Aipim",
+              "weight": 110,
+              "unit": "g"
+            },
+            {
+              "name": "Banana da Terra",
+              "weight": 156,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Mel",
+              "weight": 20,
+              "unit": "g"
+            },
+            {
+              "name": "Doce de leite",
+              "weight": 20,
+              "unit": "g"
+            },
+            {
+              "name": "Leite Condensado",
+              "weight": 20,
+              "unit": "g"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pós-treino",
+      "time": "19:00",
+      "foods": [
+        {
+          "options": [
+            {
+              "name": "Cuscuz",
+              "weight": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Aipim",
+              "weight": 90,
+              "unit": "g"
+            },
+            {
+              "name": "Batata doce",
+              "weight": 148,
+              "unit": "g"
+            },
+            {
+              "name": "Inhame",
+              "weight": 97,
+              "unit": "g"
+            },
+            {
+              "name": "Banana da Terra",
+              "weight": 127,
+              "unit": "g"
+            },
+            {
+              "name": "Arroz",
+              "weight": 90,
+              "unit": "g"
+            },
+            {
+              "name": "Pão",
+              "weight": 40,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Ovos",
+              "weight": 3
+            },
+            {
+              "name": "Filé de Frango Grelhado",
+              "weight": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Carne Grelhada",
+              "weight": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Peixe Grelhado",
+              "weight": 120,
+              "unit": "g"
+            },
+            {
+              "name": "1 Ovo + 80g de Frango/Carne/Peixe Grelhado"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Manteiga",
+              "weight": 3,
+              "unit": "g"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

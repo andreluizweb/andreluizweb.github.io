@@ -220,3 +220,12 @@
             color: #101828;
             font-weight: 700;
         }
+
+
+
+        .separator {
+            width: 100%;
+            height: 1px;
+            background-color: #D6BBFB;
+            margin: 48px 0;
+        }

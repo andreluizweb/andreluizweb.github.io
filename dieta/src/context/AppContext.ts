@@ -1,4 +1,4 @@
 import { createContext } from "react";
-import { AppDataType } from "../types";
+import { PersonDataType } from "../types";
 
-export const AppContext = createContext<AppDataType | null>(null);
+export const AppContext = createContext<PersonDataType | null>(null);
