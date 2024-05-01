@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Root, { loader as personLoader } from "./routes/root";
+import PersonDiet, { loader as personLoader } from "./routes/personDiet";
 import * as serviceWorker from "./serviceWorker";
+import Root from "./routes/root";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -12,11 +13,11 @@ const root = ReactDOM.createRoot(
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>ROOT {window.location.href}</div>,
+    element: <Root />,
   },
   {
     path: "/:person",
-    element: <Root />,
+    element: <PersonDiet />,
     loader: personLoader,
   },
 ]);

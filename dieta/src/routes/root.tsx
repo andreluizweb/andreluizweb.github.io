@@ -1,18 +1,17 @@
-import { useLoaderData } from "react-router-dom";
-import App from "../App";
-import { AppContext } from "../context/AppContext";
-import { PersonDataType } from "../types";
-
-export async function loader({ params }: { params: any }) {
-  const personData = require(`../data/${params.person}.json`);
-  return personData as PersonDataType;
-}
+import { NavLink } from "react-router-dom";
 
 export default function Root() {
-  const person = useLoaderData() as PersonDataType;
   return (
-    <AppContext.Provider value={person}>
-      <App />
-    </AppContext.Provider>
+    <div className="main">
+      <header>
+        <h1>Escolha a pessoa</h1>
+        <NavLink to="/andre" className="cta-button">
+          <h2>André Luiz</h2>
+        </NavLink>
+        <NavLink to="/erika" className="cta-button">
+          <h2>Érika</h2>
+        </NavLink>
+      </header>
+    </div>
   );
 }
