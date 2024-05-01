@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>ROOT</div>,
+    element: <div>ROOT {window.location.href}</div>,
   },
   {
     path: "/:person",
