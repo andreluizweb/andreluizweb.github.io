@@ -2,5 +2,362 @@
   "professional": "Lucas de Oliveira Silva",
   "crn": "16555",
   "name": "André Luiz Batista Aureliano",
-  "date": "11/04/2024"
+  "date": "11/04/2024",
+  "meals": [
+    {
+      "time": "06:30",
+      "name": "Café da manhã",
+      "foods": [
+        {
+          "options": [
+            {
+              "name": "Café com 100g de leite desnatado"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Pão",
+              "weight": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Aipim",
+              "weight": 220,
+              "unit": "g"
+            },
+            {
+              "name": "Batata doce",
+              "weight": 362,
+              "unit": "g"
+            },
+            {
+              "name": "Banana da Terra",
+              "weight": 312,
+              "unit": "g"
+            },
+            {
+              "name": "Cuscuz",
+              "weight": 244,
+              "unit": "g"
+            },
+            {
+              "name": "Tapioca",
+              "weight": 84,
+              "unit": "g"
+            },
+            {
+              "name": "Inhame cozido",
+              "weight": 240,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Ovo",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "uppertag": "Substituir tudo por",
+              "name": "Vitamina",
+              "list": [
+                "300ml - Leite Desnatado",
+                "100g - Banana",
+                "50g - Aveia",
+                "30g - Whey"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Almoço",
+      "time": "13:00",
+      "foods": [
+        {
+          "options": [
+            {
+              "name": "Arroz + Feijão",
+              "list": ["60g - Arroz", "80g - Feijão"]
+            },
+            {
+              "name": "Arroz + Feijão + Purê",
+              "list": ["43g - Arroz", "40g - Feijão", "40g - Purê de Batata"]
+            },
+            {
+              "name": "Arroz + Batata Inglesa",
+              "list": ["50g - Arroz", "125g - Batata Inglesa"]
+            },
+            {
+              "name": "Arroz + Purê de Batata",
+              "list": ["37g - Arroz", "75g - Purê de Batata"]
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Filé de Frango grelhado",
+              "weight": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Carne grelhada",
+              "weight": 120,
+              "unit": "g"
+            },
+            {
+              "name": "Peixe grelhado",
+              "weight": 120,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Salada",
+              "weight": 150,
+              "unit": "g"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lanche da Tarde",
+      "time": "16:00",
+      "foods": [
+        {
+          "options": [
+            {
+              "name": "Leite Desnatado",
+              "weight": 220,
+              "unit": "g"
+            },
+            {
+              "name": "Iogurte Desnatado",
+              "weight": 170,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Whey Protein",
+              "weight": 30,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Banana",
+              "weight": 75,
+              "unit": "g"
+            },
+            {
+              "name": "Manga",
+              "weight": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Melão",
+              "weight": 220,
+              "unit": "g"
+            },
+            {
+              "name": "Mamão",
+              "weight": 143,
+              "unit": "g"
+            },
+            {
+              "name": "Kiwi",
+              "weight": 127,
+              "unit": "g"
+            },
+            {
+              "name": "Morango",
+              "weight": 215,
+              "unit": "g"
+            },
+            {
+              "name": "Melancia",
+              "weight": 199,
+              "unit": "g"
+            },
+            {
+              "name": "Laranja",
+              "weight": 138,
+              "unit": "g"
+            },
+            {
+              "name": "Abacaxi",
+              "weight": 134,
+              "unit": "g"
+            },
+            {
+              "name": "Pinha",
+              "weight": 73,
+              "unit": "g"
+            },
+            {
+              "name": "Abacate",
+              "weight": 67,
+              "unit": "g"
+            },
+            {
+              "name": "Banana",
+              "weight": 66,
+              "unit": "g"
+            },
+            {
+              "name": "Uva",
+              "weight": 116,
+              "unit": "g"
+            },
+            {
+              "name": "Goiaba",
+              "weight": 127,
+              "unit": "g"
+            },
+            {
+              "name": "Maçã",
+              "weight": 117,
+              "unit": "g"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pré-treino",
+      "time": "19:00",
+      "foods": [
+        {
+          "options": [
+            {
+              "name": "Banana",
+              "weight": 150,
+              "unit": "g"
+            },
+            {
+              "name": "Pão",
+              "weight": 50,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Mel",
+              "weight": 20,
+              "unit": "g"
+            },
+            {
+              "name": "Doce de leite",
+              "weight": 20,
+              "unit": "g"
+            },
+            {
+              "name": "Leite Condensado",
+              "weight": 20,
+              "unit": "g"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pós-treino",
+      "time": "22:00",
+      "foods": [
+        {
+          "options": [
+            {
+              "name": "Leite Desnatado",
+              "weight": 200,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Whey Protein",
+              "weight": 30,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Pão",
+              "weight": 100,
+              "unit": "g"
+            },
+            {
+              "name": "Cuscuz",
+              "weight": 244,
+              "unit": "g"
+            },
+            {
+              "name": "Aipim",
+              "weight": 220,
+              "unit": "g"
+            },
+            {
+              "name": "Batata doce",
+              "weight": 362,
+              "unit": "g"
+            },
+            {
+              "name": "Inhame",
+              "weight": 240,
+              "unit": "g"
+            },
+            {
+              "name": "Banana da Terra",
+              "weight": 312,
+              "unit": "g"
+            },
+            {
+              "name": "Tapioca",
+              "weight": 82,
+              "unit": "g"
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Ovos",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "options": [
+            {
+              "name": "Queijo Mussarela",
+              "weight": 25,
+              "unit": "g"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
